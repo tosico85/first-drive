@@ -598,7 +598,7 @@ export default function OrderForm({
       <form onSubmit={handleSubmit(onValid, oninvalid)}>
         <div className="border-b border-gray-900/10 dark:border-gray-900/40 pb-8">
           <h2 className="text-lg font-semibold leading-7">상차지 정보</h2>
-          <p>Cookie Value: {cookieValue}</p>
+          <p>Cookie Valuez: {cookieValue}</p>
           <p className="mt-1 text-sm leading-6 mb-5 text-gray-600 dark:text-gray-300">
             상차지 주소 및 상차방법, 상차일자를 입력해주세요.
           </p>
