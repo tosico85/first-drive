@@ -81,7 +81,7 @@ const LoginPage = () => {
         {mode === "login" ? (
           <div className="h-full flex items-center bg-white dark:bg-gray-800">
             <div>
-              <p>Cookie Value: {cookieValue}</p>
+              <p>Cookie Value:: {cookieValue}</p>
             </div>
           </div>
         ) : (
