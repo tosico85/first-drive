@@ -88,7 +88,6 @@ const LoginPage = () => {
               {/* 쿠키 값을 출력하는 부분 */}
               <p>Cookie Value: {cookieValue}</p>
             </div>
-            {/* 이하 생략 */}
           </div>
         ) : (
           <>
