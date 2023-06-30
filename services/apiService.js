@@ -5,6 +5,7 @@ export const callServer = async (path, params) => {
   const requestUrl = `${apiPaths.baseUrl}${path}`;
   //const requestUrl = path;
   console.log(requestUrl);
+  axios.defaults.withCredentials = true; // withCredentials 전역 설정
   let result = {};
   try {
     const { data, status, statusText } = await axios.post(requestUrl, params, {
