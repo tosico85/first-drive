@@ -11,6 +11,9 @@ export const callServer = async (path, params) => {
       //const result = await axios.post(requestUrl, params, {
       method: "POST",
       withCredentials: true,
+      headers: {
+        "Access-Control-Allow-Origin": "https://first-drive.vercel.app",
+      },
     });
     if (status === 200) {
       result = data;
