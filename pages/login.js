@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import AuthContext from "./context/authContext";
 
@@ -23,6 +23,11 @@ const LoginPage = () => {
   };
 
   const [cookieValue, setCookieValue] = useState("");
+
+  useEffect(() => {
+    const value = getCookieValue();
+    setCookieValue(value);
+  }, []);
 
   const onValid = async () => {
     //login()

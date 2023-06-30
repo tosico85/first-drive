@@ -524,6 +524,10 @@ export default function OrderForm({
 
   const [cookieValue, setCookieValue] = useState("");
 
+  useEffect(() => {
+    const value = getCookieValue();
+    setCookieValue(value);
+  }, []);
   /**
    * @title 주소 검색
    * @param {상하차 구분} startEnd
