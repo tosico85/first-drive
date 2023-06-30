@@ -85,7 +85,6 @@ const LoginPage = () => {
         {mode === "login" ? (
           <div className="h-full flex items-center bg-white dark:bg-gray-800">
             <div>
-              {/* 쿠키 값을 출력하는 부분 */}
               <p>Cookie Value: {cookieValue}</p>
             </div>
           </div>
