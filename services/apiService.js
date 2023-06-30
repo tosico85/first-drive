@@ -12,6 +12,7 @@ export const callServer = async (path, params) => {
       method: "POST",
       withCredentials: true,
       headers: {
+        //헤더
         "Access-Control-Allow-Origin": "https://first-drive.vercel.app",
       },
     });
