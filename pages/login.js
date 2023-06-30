@@ -16,6 +16,14 @@ const LoginPage = () => {
     formState: { errors },
   } = useForm({ mode: "onSubmit" });
 
+  // 쿠키 값을 가져오는 함수
+  const getCookieValue = () => {
+    const cookieValue = document.cookie;
+    return cookieValue;
+  };
+
+  const [cookieValue, setCookieValue] = useState("");
+
   const onValid = async () => {
     //login()
     const email = getValues("email");
@@ -66,7 +74,11 @@ const LoginPage = () => {
     <div className="h-full flex items-center bg-white dark:bg-gray-800">
       <div className="flex flex-col w-full max-w-md px-4 py-8 bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10 mx-auto">
         {mode === "login" ? (
-          <div className="h-full flex items-center bg-white dark:bg-gray-800"></div>
+          <div className="h-full flex items-center bg-white dark:bg-gray-800">
+            <div>
+              <p>Cookie Value: {cookieValue}</p>
+            </div>
+          </div>
         ) : (
           <>
             <div className="self-center mb-2 text-xl font-light text-gray-800 sm:text-2xl dark:text-white">
