@@ -22,6 +22,6 @@ export const callServer = async (path, params) => {
   } catch (error) {
     console.log(error);
   }
-
+  //
   return result;
 };
