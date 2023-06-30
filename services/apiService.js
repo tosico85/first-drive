@@ -14,7 +14,7 @@ export const callServer = async (path, params) => {
       withCredentials: true,
       headers: {
         //헤더
-        "Access-Control-Allow-Origin": "https://first-drive.vercel.app",
+        "Access-Control-Allow-Origin": "*",
       },
     });
     if (status === 200) {
